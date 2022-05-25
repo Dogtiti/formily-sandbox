@@ -22,12 +22,20 @@ const ProFormInputMeta: ComponentMetadata = {
         setter: 'NumberSetter',
         defaultValue: 2,
       },
+      {
+        title: '标题',
+        name: 'title',
+        setter: 'StringSetter',
+        defaultValue: '标题',
+      },
     ],
     supports: {
       className: true,
       style: true,
     },
-    component: {},
+    component: {
+      isMinimalRenderUnit: true,
+    },
   },
 };
 const snippets: Snippet[] = [

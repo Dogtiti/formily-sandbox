@@ -37,7 +37,9 @@ const ProFormInput: React.FC<ProFormInputProps> = (props) => {
 
   // return <SchemaField schema={schema} />;
   return (
-    <Field title={title} decorator={[FormItem, { gridSpan }]} name={name} component={[Input]} />
+    <Field name="input"
+    title={title}
+    required decorator={[FormItem, { gridSpan }]} component={[Input]} />
   );
 };
 
